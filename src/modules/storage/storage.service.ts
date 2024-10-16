@@ -1,4 +1,5 @@
 import { ConflictException, Injectable, Logger } from '@nestjs/common';
+
 import { FirebaseConfig } from '../../infrastructure/firebase/firebase.service';
 
 @Injectable()

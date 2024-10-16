@@ -1,6 +1,7 @@
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
+
 import { ImageRepository } from '../../infra/image.repository';
-import { StorageService } from '../../../storege/storage.service';
+import { StorageService } from '../../../storage/storage.service';
 import { LoggerService } from '../../../../infrastructure/loggers/logger.service';
 
 @Injectable()

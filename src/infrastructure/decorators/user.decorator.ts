@@ -1,5 +1,6 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 import { randomUUID } from 'node:crypto';
+
 import { User as UserI } from '../../modules/users/domain/user.domain';
 
 export const User = createParamDecorator(

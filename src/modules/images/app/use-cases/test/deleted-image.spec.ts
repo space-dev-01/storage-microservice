@@ -1,7 +1,7 @@
 import { NotFoundException } from '@nestjs/common';
 import { DeletedImage } from '../deleted-image.usecase';
 import { ImageRepository } from '../../../infra/image.repository';
-import { StorageService } from '../../../../storege/storage.service';
+import { StorageService } from '../../../../storage/storage.service';
 import { LoggerService } from '../../../../../infrastructure/loggers/logger.service';
 import { ImageEntity } from '../../../infra/entity/image.entity';
 

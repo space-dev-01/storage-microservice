@@ -1,11 +1,12 @@
 import { BadRequestException, Inject, Injectable } from '@nestjs/common';
+import * as sharp from 'sharp';
+import { randomUUID } from 'node:crypto';
+
 import { ImageRepository } from '../../infra/image.repository';
 import { UploadFileDto } from '../dtos/upload-file.dto';
 import { ImageTypesEnum } from '../../domain/image-types.enum';
-import { randomUUID } from 'crypto';
-import * as sharp from 'sharp';
 import { Image } from '../../domain/image.domain';
-import { StorageService } from '../../../storege/storage.service';
+import { StorageService } from '../../../storage/storage.service';
 import { LoggerService } from '../../../../infrastructure/loggers/logger.service';
 
 @Injectable()

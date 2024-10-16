@@ -1,10 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { NotFoundException } from '@nestjs/common';
+
 import { ImagesController } from '../images.controller';
 import { ImagesService } from '../images.service';
 import { FilterDto } from '../app/dtos/filter.dto';
 import { JwtMockGuard } from '../../../infrastructure/guards/jwt-auth.guard';
 import { getMockFile, getMockImage, getMockUser } from './mocks';
-import { NotFoundException } from '@nestjs/common';
 
 describe('ImagesController', () => {
   let controller: ImagesController;

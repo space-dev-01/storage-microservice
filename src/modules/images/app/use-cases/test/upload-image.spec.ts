@@ -1,7 +1,7 @@
 import { BadRequestException } from '@nestjs/common';
 import { UploadImage } from '../upload-image.usecase';
 import { ImageRepository } from '../../../infra/image.repository';
-import { StorageService } from '../../../../storege/storage.service';
+import { StorageService } from '../../../../storage/storage.service';
 import { LoggerService } from '../../../../../infrastructure/loggers/logger.service';
 import { UploadFileDto } from '../../dtos/upload-file.dto';
 

@@ -1,6 +1,8 @@
 import { DataSource, DataSourceOptions } from 'typeorm';
-import { config } from '../../config/envs';
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+
+import { config } from '../../config/envs';
+
 export const getTypeOrmModuleOptions = (): TypeOrmModuleOptions =>
   ({
     type: 'postgres',
